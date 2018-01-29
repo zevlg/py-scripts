@@ -6,7 +6,7 @@
 import sys
 import base64
 
-__version__ = '0.1'
+__version__ = '0.2'
 
 
 def usage():
@@ -36,4 +36,4 @@ if __name__ == '__main__':
               'font-style: %s;' % style,
               'font-weight: %s;' % weight, sep='\n')
         print('src: url(data:font/ttf;charset-utf-8;',
-              b64font, ');\n}', sep='')
+              b64font.decode(), ');\n}', sep='')
